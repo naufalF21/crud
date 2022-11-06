@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
+import AddProduct from './components/AddProduct';
 import 'bulma/css/bulma.min.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 					<div className="column is-half is-offset-one-quarter">
 						<Routes>
 							<Route exact path="/" element={<ProductList />} />
+							<Route path="/add" element={<AddProduct />} />
 						</Routes>
 					</div>
 				</div>

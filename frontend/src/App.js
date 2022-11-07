@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import AddProduct from './components/AddProduct';
+import EditProduct from './components/EditProduct';
 import 'bulma/css/bulma.min.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 						<Routes>
 							<Route exact path="/" element={<ProductList />} />
 							<Route path="/add" element={<AddProduct />} />
+							<Route path="/edit/:id" element={<EditProduct />} />
 						</Routes>
 					</div>
 				</div>
